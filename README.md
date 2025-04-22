@@ -1,11 +1,7 @@
-# PhilosophyGuesser
-
-Test your knowledge of world philosophy through a geoguesser inspired experience. 
-
-# PhiloGuessr: A Philosophy-Based Geographic Game
+# SageSites: A Philosophy-Based Geographic Game
 
 ## Concept Overview
-PhiloGuessr is a GeoGuessr-style application that focuses on famous philosophical locations throughout history. Players are shown images of places where significant philosophical works were written or where philosophers found inspiration, and must identify the location. Timed hints featuring quotes from philosophical works written at those locations add an educational dimension to the gameplay.
+SageSites is a GeoGuessr-style application that focuses on famous philosophical locations throughout history. Players are shown images of places where significant philosophical works were written or where philosophers found inspiration, and must identify the location. Timed hints featuring quotes from philosophical works written at those locations add an educational dimension to the gameplay.
 
 ## Key Locations
 
@@ -85,7 +81,7 @@ This was the birthplace of the pre-Socratic philosopher Empedocles. The Archaeol
 - Daily challenges focusing on specific philosophical traditions
 
 ## Educational Value
-PhiloGuessr serves as both an entertaining game and an educational tool, helping users:
+SageSites serves as both an entertaining game and an educational tool, helping users:
 - Connect philosophical ideas with their geographical and historical contexts
 - Learn about the physical settings that influenced great thinkers
 - Discover the global nature of philosophical thought across different cultures and time periods
