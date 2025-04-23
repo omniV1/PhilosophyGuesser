@@ -1,20 +1,110 @@
-# SageSites
+# SageSites: Philosophy Geography Game
 
-<div align="center">
-  <h3>🌍 Where Philosophy Meets Geography 🧠</h3>
-</div>
+An educational game that connects philosophical ideas with their geographical origins. Test your knowledge of philosophy and geography by guessing the locations of important philosophical sites around the world.
 
-<div align="center">
-  
-  [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-  [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
-  ![Version](https://img.shields.io/badge/version-1.0.0--alpha-orange)
-  
-</div>
+## Features
 
-## Overview
+- Interactive map-based gameplay
+- Educational content about philosophers and their works
+- Progressive hint system
+- User progress tracking
+- Responsive design for desktop and mobile
 
-**SageSites** is an interactive geographical discovery game that explores the world's most significant philosophical landmarks. Navigate through history's intellectual hotspots, test your knowledge, and discover where humanity's greatest ideas were born.
+## Prerequisites
+
+- Node.js (v16 or higher)
+- npm (v8 or higher)
+- PostgreSQL (v14 or higher)
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd PhilosophyGuesser
+```
+
+2. Install root dependencies:
+```bash
+cd src
+npm install
+```
+
+3. Install client dependencies:
+```bash
+cd client
+npm install
+```
+
+4. Install server dependencies:
+```bash
+cd ../server
+npm install
+```
+
+5. Set up environment variables:
+Create a `.env` file in the server directory with the following content:
+```env
+DATABASE_URL="postgresql://username:password@localhost:5432/sagesites"
+JWT_SECRET="your-secret-key"
+PORT=3000
+NODE_ENV=development
+```
+
+6. Initialize the database:
+```bash
+npx prisma generate
+npx prisma db push
+```
+
+## Development
+
+1. Start the development server:
+```bash
+# In the src directory
+npm run start
+```
+
+This will start both the client and server in development mode:
+- Client: http://localhost:3001
+- Server: http://localhost:3000
+
+## Testing
+
+```bash
+# Run all tests
+npm test
+
+# Run client tests
+npm run test:client
+
+# Run server tests
+npm run test:server
+```
+
+## Project Structure
+
+```
+src/
+├── client/                 # Frontend React application
+│   ├── public/            # Static files
+│   └── src/
+│       ├── components/    # Reusable React components
+│       ├── pages/         # Page components
+│       ├── store/         # Redux store configuration
+│       ├── services/      # API services
+│       └── utils/         # Utility functions
+├── server/                # Backend Express application
+│   ├── src/
+│   │   ├── config/       # Configuration files
+│   │   ├── controllers/  # Route controllers
+│   │   ├── middleware/   # Express middleware
+│   │   ├── models/       # Database models
+│   │   ├── routes/       # API routes
+│   │   └── utils/        # Utility functions
+│   └── prisma/           # Database schema and migrations
+└── shared/               # Shared types and utilities
+```
 
 ## ✨ Features
 
